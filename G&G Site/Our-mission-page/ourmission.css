@@ -1,0 +1,123 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(233, 233, 226);
+
+}
+
+#banner {
+  position: relative;
+  height: 300px;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border-bottom-right-radius: 7px;
+  border-bottom-left-radius: 7px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+#banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://firebasestorage.googleapis.com/v0/b/vid-1-60067.firebasestorage.app/o/PXL_20250425_140820552.jpg1.jpg2.jpg?alt=media&token=3e5ff452-3828-4f12-86f5-35b7c7ce75c7');
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+}
+
+#banner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(252, 78, 110, 0.7);
+  z-index: 2;
+}
+
+#banner .GG h1 {
+  position: relative;
+  color: white;
+  margin: 0;
+  text-align: center;
+  padding: 0 20px;
+  font-size: 60px;
+  font-weight: 600;
+  font-family: 'Space Mono', monospace;
+  z-index: 3;        /* Makes text white */
+}
+
+#banner .GG h1 a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* ...existing code... */
+
+
+
+/* Remove the .houses a rule, as .houses is now the <a> */
+/* Make sure the body or a parent is positioned relative for absolute positioning to work */
+body {
+  position: relative;
+}
+
+/* ...existing code... */
+
+@media (max-width: 768px) {
+  #banner {
+    height: 200px;
+  }
+  #banner .GG h1 {
+    font-size: 1.5em;
+    padding: 0 10px;
+  }
+  /* .houses rule kept commented out; clarify if needed */
+  /* .houses {
+    position: relative;
+    bottom: 40px;
+    right: 200px;
+  } */
+}
+
+
+
+
+.info {
+    position: relative;
+    align-items: center;
+    text-align: center; /* Add this line */
+    font-weight: bold;
+    font-family: 'Space Mono', monospace;
+    font-size: 1.4em;
+    margin-top: 120px;
+}
+
+.contacts {
+  position:relative;
+    top: 500px;           /* Keep your desired vertical position */
+    text-align: center;
+    align-items: center;
+    border-color: rgb(109, 109, 109);
+    border-width: 1px;
+    border-style: solid;
+    padding: 50px 100px 50px 100px; /* Increase this value for a larger bordered area */
+    font-family: 'Space Mono', monospace;
+    font-weight: 300;
+    box-shadow: #00000050 0px 0px 5px;
+    margin: -10px -10px -10px -10px; /* Adjusted margin for better spacing */
+}
+
+.contacts a {
+  text-decoration: none;   /* Removes underline */
+  color: #858585;             /* Change to any color you want */
+  font-weight: bold;       /* Optional: make it bold */
+}

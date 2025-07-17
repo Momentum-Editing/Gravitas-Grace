@@ -1,0 +1,31 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(233, 233, 226);
+
+}
+
+/* ...existing code... */
+
+
+
+/* Remove the .houses a rule, as .houses is now the <a> */
+/* Make sure the body or a parent is positioned relative for absolute positioning to work */
+body {
+  position: relative;
+}
+
+/* ...existing code... */
+
+
+
+
+.Contacts {
+    position: relative;
+    align-items: center;
+    text-align: center; /* Add this line */
+    font-weight: bold;
+    font-family: 'Space Mono', monospace;
+    font-size: 1.4em;
+    margin-top: 120px;
+}

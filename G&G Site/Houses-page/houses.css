@@ -1,0 +1,368 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(233, 233, 226);
+
+
+}
+
+#banner {
+  position: relative;
+  height: 300px;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border-bottom-right-radius: 7px;
+  border-bottom-left-radius: 7px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://firebasestorage.googleapis.com/v0/b/vid-1-60067.firebasestorage.app/o/PXL_20250425_140820552.jpg1.jpg2.jpg?alt=media&token=3e5ff452-3828-4f12-86f5-35b7c7ce75c7');
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+}
+
+#banner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(252, 78, 110, 0.7);
+  z-index: 2;
+}
+
+#banner .GG h1 {
+  position: relative;
+  color: white;
+  margin: 0;
+  text-align: center;
+  padding: 0 20px;
+  font-size: 60px;
+  font-weight: 600;
+  font-family: 'Space Mono', monospace;
+  z-index: 3;
+  text-decoration: none; /* Removes underline */
+  color: #fff;           /* Makes text white */
+}
+
+#banner .GG h1 a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* ...existing code... */
+
+.timothyhouse {
+  display: inline-block;
+  position: absolute;
+  top: 400px;    /* Adjust as needed */
+  left: 17%;            /* Center horizontally */
+  transform: translateX(-50%);
+  z-index: 10;
+  border-radius: 7px;
+  background-image: url(https://firebasestorage.googleapis.com/v0/b/vid-1-60067.firebasestorage.app/o/istockphoto-1145840259-612x612.jpg?alt=media&token=da93da2e-843f-4cd6-bbb3-014b579298fc);
+  background-size: 550px;
+  background-repeat: no-repeat;
+  background-position: center -70px;
+  width: 250px;
+  height: 200px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'Space Mono', monospace;
+  font-size: 1.4em;
+  text-align: center;
+  line-height: normal;
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+  transform-origin: center;
+  justify-content: center;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+  line-height: 65px;
+}
+
+h1 {
+  margin: 0;
+}
+
+.timothyhouse::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(44, 99, 219, 0.75); /* Turquoise with 50% opacity */
+  border-radius: 5px;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.timothyhouse {
+  position: absolute;
+}
+
+.timothyhouse span {
+  position: relative;
+  z-index: 2;
+}
+.timothyhouse:hover::after {
+  background: rgba(43, 122, 241, 0.8); /* More opaque turquoise overlay */
+}
+
+.timothyhouse:hover {
+  transform: translateX(-50%) scale(1.05); /* Keep it centered while scaling */
+  box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* Remove the .houses a rule, as .houses is now the <a> */
+/* Make sure the body or a parent is positioned relative for absolute positioning to work */
+body {
+  position: relative;
+}
+
+/* ...existing code... */
+
+@media (max-width: 768px) {
+  #banner {
+    height: 200px;
+  }
+  #banner .GG h1 {
+    font-size: 1.5em;
+    padding: 0 10px;
+  }
+  /* .houses rule kept commented out; clarify if needed */
+  /* .houses {
+    position: relative;
+    bottom: 40px;
+    right: 200px;
+  } */
+}
+
+.apollohouse {
+  display: flex;
+  position: absolute;
+  top: 400px;           /* Keep your desired vertical position */
+  left: 39%;            /* Center horizontally */
+  transform: translateX(-50%);
+  z-index: 10;
+  border-radius: 7px;
+  background-image: url(https://firebasestorage.googleapis.com/v0/b/vid-1-60067.firebasestorage.app/o/istockphoto-1145840259-612x612.jpg?alt=media&token=da93da2e-843f-4cd6-bbb3-014b579298fc);
+  background-size: 550px;
+  background-repeat: no-repeat;
+  background-position: center -70px;
+  width: 250px;
+  height: 200px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'Space Mono', monospace;
+  font-size: 1.4em;
+  text-align: center;
+  line-height: normal;
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+  transform-origin: center;
+  justify-content: center;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+  line-height: 65px;
+}
+
+h1 {
+  margin: 0;
+}
+
+.apollohouse::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(187, 87, 20, 0.75); /* Turquoise with 50% opacity */
+  border-radius: 7px;
+  z-index: 1;
+  pointer-events: none;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.apollohouse {
+  position: absolute;
+}
+
+.apollohouse span {
+  position: relative;
+  z-index: 2;
+}
+.apollohouse:hover::after {
+  background: rgba(243, 126, 72, 0.8); /* More opaque turquoise overlay */
+}
+
+.apollohouse:hover {
+  transform: translateX(-50%) scale(1.05); /* Keep it centered while scaling */
+  box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.barnabashouse {
+  display: flex;
+  position: absolute;
+  top: 400px;           /* Keep your desired vertical position */
+  left: 61%;            /* Center horizontally */
+transform: translateX(-50%);
+  z-index: 10;
+  border-radius: 7px;
+  background-image: url(https://firebasestorage.googleapis.com/v0/b/vid-1-60067.firebasestorage.app/o/istockphoto-1145840259-612x612.jpg?alt=media&token=da93da2e-843f-4cd6-bbb3-014b579298fc);
+  background-size: 550px;
+  background-repeat: no-repeat;
+  background-position: center -70px;
+  width: 250px;
+  height: 200px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'Space Mono', monospace;
+  font-size: 1.4em;
+  text-align: center;
+  line-height: normal;
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+  transform-origin: center;
+  justify-content: center;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+  line-height: 65px;
+}
+
+h1 {
+  margin: 0;
+}
+
+.barnabashouse::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(56, 163, 29, 0.75); /* Turquoise with 50% opacity */
+  border-radius: 7px;
+  z-index: 1;
+  pointer-events: none;
+  box-shadow: 3px 3px 10px rgba(132, 53, 134, 0.2);
+}
+
+.barnabashouse {
+  position: absolute;
+}
+
+.barnabashouse span {
+  position: relative;
+  z-index: 2;
+}
+.barnabashouse:hover::after {
+  background: rgba(56, 218, 23, 0.75); /* More opaque turquoise overlay */
+}
+
+.info {
+    position: relative;
+    top:385px;
+    align-items: center;
+    text-align: center; /* Add this line */
+    font-weight: bold;
+    font-family: 'Space Mono', monospace;
+    font-size: 1.3em;
+}
+
+.barnabashouse:hover {
+  transform: translateX(-50%) scale(1.05); /* Keep it centered while scaling */
+  box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.contacts {
+  position:relative;
+    top: 500px;           /* Keep your desired vertical position */
+    text-align: center;
+    align-items: center;
+    border-color: rgb(109, 109, 109);
+    border-width: 1px;
+    border-style: solid;
+    padding: 50px 100px 50px 100px; /* Increase this value for a larger bordered area */
+    font-family: 'Space Mono', monospace;
+    font-weight: 300;
+    box-shadow: #00000050 0px 0px 5px;
+    margin: -10px -10px -10px -10px; /* Adjusted margin for better spacing */
+}
+
+.contacts a {
+  text-decoration: none;   /* Removes underline */
+  color: #858585;             /* Change to any color you want */
+  font-weight: bold;       /* Optional: make it bold */
+}
+
+.stephenhouse {
+  display: flex;
+  position: absolute;
+  top: 400px;           /* Keep your desired vertical position */
+  left: 83%;            /* Center horizontally */
+  transform: translateX(-50%);
+  z-index: 10;
+  border-radius: 7px;
+  background-image: url(https://firebasestorage.googleapis.com/v0/b/vid-1-60067.firebasestorage.app/o/istockphoto-1145840259-612x612.jpg?alt=media&token=da93da2e-843f-4cd6-bbb3-014b579298fc);
+  background-size: 500px;
+  background-repeat: no-repeat;
+  background-position: center -70px;
+  width: 250px;
+  height: 200px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'Space Mono', monospace;
+  font-size: 1.4em;
+  text-align: center;
+  line-height: normal;
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+  transform-origin: center;
+  justify-content: center;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+  line-height: 65px;
+}
+
+h1 {
+  margin: 0;
+}
+
+.stephenhouse::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(141, 41, 199, 0.75); /* Turquoise with 50% opacity */
+  border-radius: 7px;
+  z-index: 1;
+  pointer-events: none;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.stephenhouse {
+  position: absolute;
+}
+
+.stephenhouse span {
+  position: relative;
+  z-index: 2;
+}
+.stephenhouse:hover::after {
+  background: rgba(234, 83, 248, 0.8); /* More opaque turquoise overlay */
+}
+
+.stephenhouse:hover {
+  transform: translateX(-50%) scale(1.05); /* Keep it centered while scaling */
+  box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
